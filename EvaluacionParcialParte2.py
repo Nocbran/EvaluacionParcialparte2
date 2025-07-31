@@ -1,14 +1,21 @@
-def CalcMenu(n):
+def CalcMenu(a,b,resultado,mcd,mcd1):
     print("CALCULO DE MCD")
     a = int(input("Ingrese el primer numero: "))
     b = int(input("Ingrese el segundo numero: "))
-    a, b == cmd
+    r1 = a % 2
+    r2 = b % 2
+    mcd = r1,r2
 
-def CadenaRepetida(r):
-    if n == 3:
+
+
+def CadenaRepetida(palabra,resultado,n,r=1):
+    palabra = input("Ingrese una palabra: ")
+    n = int(input("Cuantas veces desea repetirlo? "))
+    if r == n:
         return n
-    else
-        return  n * n
+    else:
+        return resultado *= n
+
 
 def ContarLetras(l,palabra):
     print("Bienvenido al conteo de letra: ")
@@ -17,7 +24,7 @@ def ContarLetras(l,palabra):
 
 
 def CalcDigitosNnumero(d):
-    d = int(input("ingres"))
+    d = int(input("digite un numero"))
 
 def menu():
     print("*************MENU*************")
@@ -31,9 +38,9 @@ def menu():
 def ejecutar_opcion(opcion):
     match opcion:
         case 1:
-
+             print(f"\nEl MCD de ambos numeros es {mcd2}")
         case 2:
-
+            print(f"\nResultado {CadenaRepetida(n) * CadenaRepetida(r)}")
         case 3:
 
         case 4:
