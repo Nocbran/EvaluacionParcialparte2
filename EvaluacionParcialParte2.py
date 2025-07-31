@@ -11,20 +11,20 @@ def CalcMenu(a,b,resultado,mcd,mcd1):
 def CadenaRepetida(palabra,resultado,n,r=1):
     palabra = input("Ingrese una palabra: ")
     n = int(input("Cuantas veces desea repetirlo? "))
-    if r == n:
-        return n
+
+
+
+def ContarLetras(n,palabra):
+    if n <= 1:
+        return palabra
     else:
-        return resultado *= n
+        return palabra + CadenaRepetida(palabra, n - 1)
 
-
-def ContarLetras(l,palabra):
-    print("Bienvenido al conteo de letra: ")
-    palabra = input("Ingrese una palabra: ")
-    letra = input("Ingrese la letra que desea ver cuantas veses se repite: ")
 
 
 def CalcDigitosNnumero(d):
     d = int(input("digite un numero"))
+
 
 def menu():
     print("*************MENU*************")
@@ -38,16 +38,20 @@ def menu():
 def ejecutar_opcion(opcion):
     match opcion:
         case 1:
-             print(f"\nEl MCD de ambos numeros es {mcd2}")
+             print(f"\nEl MCD de ambos numeros es: ")
         case 2:
-            print(f"\nResultado {CadenaRepetida(n) * CadenaRepetida(r)}")
+            print(f"\nResultado ")
         case 3:
-
+            palabra = input("Ingrese una palabra: ")
+            n = int(input("¿Cuántas veces desea repetirla?: "))
+            resultado = CadenaRepetida(palabra, n)
+            print("Resultado:", resultado)
         case 4:
-
+            print(f"\nResultado:")
         case 5:
-
-        case _:
+            print(f"\nResultado:")
+        case 0:
+            print(f"\nResultado:")
 
 def main():
     opcion = 0
